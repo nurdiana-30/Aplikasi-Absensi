@@ -1,0 +1,7 @@
+{
+  "name": "apkabsensi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

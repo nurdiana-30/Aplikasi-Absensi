@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Input Data Siswa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Form Data Santri</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label position="floating">NIS</ion-label>
+        <ion-input [(ngModel)]="form.nis"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nama Santri</ion-label>
+        <ion-input [(ngModel)]="form.nama"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Jenis Kelamin</ion-label>
+        <ion-select [(ngModel)]="form.jk" placeholder="Pilih">
+          <ion-select-option value="L">Laki-laki</ion-select-option>
+          <ion-select-option value="P">Perempuan</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Kelas Ngaji</ion-label>
+        <ion-select [(ngModel)]="form.kelas" placeholder="Pilih Kelas">
+          <ion-select-option value="Iqro 1">Iqro 1</ion-select-option>
+          <ion-select-option value="Iqro 2">Iqro 2</ion-select-option>
+          <ion-select-option value="Iqro 3">Iqro 3</ion-select-option>
+          <ion-select-option value="Al-Qur'an">Al-Qur'an</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Umur</ion-label>
+        <ion-input type="number" [(ngModel)]="form.umur"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Alamat</ion-label>
+        <ion-textarea [(ngModel)]="form.alamat"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nama Wali</ion-label>
+        <ion-input [(ngModel)]="form.wali"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">No. HP Wali</ion-label>
+        <ion-input [(ngModel)]="form.hp"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" color="success" class="ion-margin-top"
+        (click)="simpan()">
+        Simpan Data
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
