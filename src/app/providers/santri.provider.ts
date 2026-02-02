@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SantriProvider {
 
-  api = 'http://localhost/api-absensi/';
+  api = 'https://nurdiana.perangkatlunak.my.id/api/';
 
   constructor(private http: HttpClient) {}
 
